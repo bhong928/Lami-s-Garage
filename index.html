@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/avenir');
+    </style>
+    <a href="https://www.flaticon.com/free-icons/menu-bar" class='flaticon-credit'title="menu bar icons">Menu bar icons created by Anggara - Flaticon</a>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +13,19 @@
     </title>
 </head>
 <body>
-    <div class="background"></div>
+    <div id='nav-container'>
+        <nav id="nav-bar">
+            <a href="home">Home</a>
+            <a href="gallery">Gallery</a>
+            <a href="about">About</a>
+            <a href="contact">Contact</a>
+        </nav>
+    </div>
+    <a href="javascript:void(0);" class="hamburger-icon" onclick="burgerFunction()">
+        <img src="images\menu-bar.png" alt="hamburger icon for nav bar">
+    </a>
 
+    <h1>Lami's Garage</h1>
     <script src="main.js"></script>
 </body>
 </html>

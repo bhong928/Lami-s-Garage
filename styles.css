@@ -1,6 +1,69 @@
-.background{
-    background-image: url('images/engineBay.jpg');
-    width: 100%;
-    height: a;
+body{
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: calc(50% - 27px) center;
+    background-color: black;
+    background-image: url('https://wallpapercave.com/wp/9Y5Ns7I.jpg');
+    min-height: 100vh;
+    font-family: 'Avenir', sans-serif;  
+    font-weight: bolder;           
+}
+.flaticon-credit{
+    font-size: 5px;
+    color: grey;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* Remove margins and padding from all elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav-container {
+    background-color: #333; /* Dark background for the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#nav-bar{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+#nav-bar a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+#nav-bar a:hover{
+    background-color: lightslategray;
+    color: black;
+}
+#nav-bar a.active {
+    background-color: #4CAF50; /* Add a green background for the active page */
+    color: white;
+}
+.hamburger-icon{
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline;
+}
+.hamburger-icon img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 10%;
 }
