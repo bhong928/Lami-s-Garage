@@ -27,19 +27,17 @@ body{
     background-color: #333; /* Dark background for the full width */
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 #options{
-    text-align: center;
     text-decoration: none;
     list-style-type: none;
     text-transform: uppercase;
 }
 #options a{
+    text-align: center;
     display: inline-block;
     color: white;
-    text-align: center;
     padding: 10px 40px;
     text-decoration: none;
 }
