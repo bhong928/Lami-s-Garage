@@ -23,45 +23,52 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-#nav-container {
+#nav-bar {
     background-color: #333; /* Dark background for the full width */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-#nav-bar{
+#options{
     text-align: center;
     text-decoration: none;
     list-style-type: none;
     text-transform: uppercase;
 }
-#nav-bar a{
+#options a{
     display: inline-block;
     color: white;
     text-align: center;
     padding: 10px 40px;
     text-decoration: none;
 }
-#nav-bar a:hover{
+#options a:hover{
     background-color: lightslategray;
     color: black;
 }
-#nav-bar a.active {
+#options a.active {
     background-color: #4CAF50; /* Add a green background for the active page */
     color: white;
 }
-.hamburger-icon{
-    cursor: pointer;
-    margin-right: 10px;
-    display: inline;
+.hamburger{
+    display: none;
 }
-.hamburger-icon img{
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+        background-color: #ddd;
+        color: black;
+        text-align: center;
+    }
+#options {
+    display: none;
+}
+#options a {
     display: block;
     width: 100%;
-    height: auto;
+    }   
 }
-
 h1{
     text-align: center;
     color: whitesmoke;
